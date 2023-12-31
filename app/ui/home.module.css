@@ -1,0 +1,31 @@
+.shape {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid blue;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* This positions the content at the end of the flex container, which is the right side in a row direction */
+    align-items: center; /* Center the content vertically */
+  }
+
+  .newContainer {
+    width:500px;
+    height:500px;
+    position: fixed;
+}
+
+.leftElement {
+    display: inline-block;
+    align-items: left;
+    position: sticky;
+}
+
+.rightElement {
+  display: inline-block;
+  position: sticky;
+  align-items: right;
+}
