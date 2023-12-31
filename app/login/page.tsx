@@ -1,5 +1,3 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import Image from 'next/image';
@@ -20,7 +18,7 @@ export default function Page() {
       </div>
       <div className="flex grow flex-col gap-4 md:flex-row justify-center">
         <div className='py-4'>
-          <div><p className="text-xl font-bold">Tell us a little more about your financial personality.</p></div>
+          <div className='py-8'><p className="text-xl font-extrabold">Tell us a little more about your financial personality.</p></div>
         </div>
       </div>
       <div className="flex grow flex-col gap-4 md:flex-row justify-center">
@@ -34,7 +32,7 @@ export default function Page() {
             <label className="text-black-600 p-4 font-bold">Financial Information</label>
           </div>
           <div className="flex">
-            <label style={{ marginLeft: 80 }} className="text-black-600 font-bold">Income</label>
+            <label style={{ marginLeft: 80 }} className="text-black-600 font-semibold">Income</label>
           </div>
           <div style={{ marginLeft: 80 }} className="py-4 flex">
             <select>
@@ -50,7 +48,7 @@ export default function Page() {
             </select>
           </div>
           <div style={{ marginLeft: 80 }} className="flex py-4">
-            <label className="text-black-600 font-bold">Relationship Status</label>
+            <label className="text-black-600 font-semibold">Relationship Status</label>
           </div>
           <div style={{ marginLeft: 80 }} className="flex py-4 option-container">
             <input type="radio" name="select" id="option-1" className="input-radio" />
@@ -86,7 +84,7 @@ export default function Page() {
           <div style={{ marginLeft: 90 }}>
             <div style={{ flexDirection: "row" }} className="flex py-4 option-container">
               <label className="option-1 py-6 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
-                Budgetting
+                Budgeting
                 <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
               </label>
               <label style={{ marginLeft: 20 }} className="option-1 py-6 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
@@ -94,7 +92,7 @@ export default function Page() {
                 <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
               </label>
               <label style={{ marginLeft: 20 }} className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
-                Credit 
+                Credit
                 <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
                 Management
               </label>
@@ -123,13 +121,13 @@ export default function Page() {
               </label>
             </div>
           </div>
-          <div style={{ marginLeft: 490 }} className="py-4">
+          <div style={{ marginLeft: 490 }} className=' flex grow flex-col gap-4 md:flex-row justify-center py-4'>
             <Link
-              className="text-white flex w-40 rounded-lg bg-blue-400 p-4 cursor-pointer"
-              key="Login"
+              className="grow text-center text-white rounded-lg bg-blue-400 p-4 cursor-pointer"
+              key="complete"
               href={'complete'}
             >
-              Next
+                Next 
             </Link>
           </div>
         </div>
@@ -137,12 +135,3 @@ export default function Page() {
     </main>
   );
 }
-
-// <div className={styles.newContainer}>
-//     <div className={styles.leftElement}>
-//         left
-//     </div>
-//     <div className={styles.rightElement}>
-//         right
-//     </div>
-// </div>
