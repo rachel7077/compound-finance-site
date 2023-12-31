@@ -23,6 +23,7 @@ export default function Page() {
           <div><p className="text-xl font-bold">Tell us a little more about your financial personality.</p></div>
         </div>
       </div>
+      <div className="flex grow flex-col gap-4 md:flex-row justify-center">
         <div className={styles.leftElement}>
           <div className="flex p-4">
             <Image
@@ -73,64 +74,66 @@ export default function Page() {
             </label>
           </div>
         </div>
-      <div className={styles.rightElement}>
-        <div className="flex p-4">
-          <Image
-            src={two}
-            width={63}
-            alt="logo"
-          />
-          <label className="text-black-600 p-4 font-bold">My Financial Interests</label>
-        </div>
-        <div style={{ marginLeft: 90}}>
-          <div style={{ flexDirection: "row" }} className="flex py-4 option-container">
-          <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-          <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Budgetting
-            </label> 
-            <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-            <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Investing
-            </label>  
-            <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-            <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Credit Management
-            </label>     
+        <div className={styles.rightElement}>
+          <div className="flex p-3">
+            <Image
+              src={two}
+              width={63}
+              alt="logo"
+            />
+            <label className="text-black-600 p-4 font-bold">My Financial Interests</label>
           </div>
-          <div style={{ flexDirection: "row" }} className="flex py-4 option-container">
-          <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-          <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Debt Management
-            </label> 
-            <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-            <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Retirement Planning
-            </label> </div>
-          <div className="py-4" style={{ flexDirection: "row" }}>
-          <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-          <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Tax Planning
-            </label> 
-            <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-            <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Goal Setting
-            </label>  
-            <input  style={{ marginLeft: 10}} type="radio" id="option-1" className="input-radio" />
-            <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointe">
-              Estate Planning
-            </label>
+          <div style={{ marginLeft: 90 }}>
+            <div style={{ flexDirection: "row" }} className="flex py-4 option-container">
+              <label className="option-1 py-6 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Budgetting
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label>
+              <label style={{ marginLeft: 20 }} className="option-1 py-6 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Investing
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label>
+              <label style={{ marginLeft: 20 }} className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Credit 
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+                Management
+              </label>
             </div>
-        </div>
-        <div style={{ marginLeft: 425 }} className="py-4">
-          <Link
-            className="text-white flex w-40 rounded-lg bg-blue-400 p-4 cursor-pointer"
-            key="Login"
-            href={'complete'}
-          >
-            Next
-          </Link>
+            <div style={{ flexDirection: "row" }} className="flex py-4 option-container">
+              <label className="option-1 py-6 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Debt Management
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label>
+              <label style={{ marginLeft: 20 }} className="option-1 py-6 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Retirement Planning
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label> </div>
+            <div className="py-6" style={{ flexDirection: "row" }}>
+              <label className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Tax Planning
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label>
+              <label style={{ marginLeft: 30 }} className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Goal Setting
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label>
+              <label style={{ marginLeft: 30 }} className="option-1 py-4 text-black w-40 rounded-lg bg-crisp-100 p-4 cursor-pointer">
+                Estate Planning
+                <input style={{ marginLeft: 10 }} type="radio" id="option-1" className="input-radio" />
+              </label>
+            </div>
+          </div>
+          <div style={{ marginLeft: 490 }} className="py-4">
+            <Link
+              className="text-white flex w-40 rounded-lg bg-blue-400 p-4 cursor-pointer"
+              key="Login"
+              href={'complete'}
+            >
+              Next
+            </Link>
           </div>
         </div>
+      </div>
     </main>
   );
 }

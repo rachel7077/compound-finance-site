@@ -29,3 +29,15 @@
   position: sticky;
   align-items: right;
 }
+
+.right {
+  display: inline-block;
+  position: sticky;
+  right: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+}
