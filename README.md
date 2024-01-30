@@ -1,5 +1,3 @@
-## Next.js App Router Course - Starter
+## Compound Finance Website
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
-
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+This contains code to create the basic outline of a finance website. A user can create an account to access the site. The site is mainly frontend and does not save the users data. 
